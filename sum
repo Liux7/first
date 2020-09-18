@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int a[100],target,n;
+	cin>>n;
+	for(int p=1;p<=n;p++)
+		cin>>a[p];
+	cin>>target;
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=n;j++){
+			if(a[i]+a[j]==target)
+				cout<<a[i]<<"+"<<a[j]<<"="<<target<<endl;
+		}
+	}
+	return 0;
+} 
